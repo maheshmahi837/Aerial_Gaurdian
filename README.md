@@ -312,8 +312,8 @@ These optimizations can significantly improve FPS while reducing power consumpti
 .
 ├── README.md
 ├── notebooks
-│   ├── training.ipynb
-│   ├── tracking.ipynb
+│   ├── Aerial_Guardian_part1.ipynb
+│   ├── Aerial_Guardian_part2.ipynb
 │
 ├── configs
 |   ├── args.yaml
