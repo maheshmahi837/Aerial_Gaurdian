@@ -315,11 +315,8 @@ These optimizations can significantly improve FPS while reducing power consumpti
 │   ├── training.ipynb
 │   ├── tracking.ipynb
 │
-├── weights
-│   ├── best_visdrone_person_yolo11m.pt
-│   ├── best_visdrone_person_yolo11m.onnx
-│
 ├── configs
+|   ├── args.yaml
 │   ├── bytetrack_drone.yaml
 │   ├── botsort_drone.yaml
 │
@@ -327,9 +324,7 @@ These optimizations can significantly improve FPS while reducing power consumpti
 │   ├── tracked_video.mp4
 │
 └── results
-    ├── training_curves.png
-    ├── confusion_matrix.png
-    ├── fps_benchmark.png
+    
 ```
 
 ---
