@@ -1,0 +1,18 @@
+
+tracker_type: bytetrack
+
+# --- Association thresholds ---
+# Lower track_high_thresh because aerial objects are small and scores are lower
+track_high_thresh: 0.30     # default 0.50 → relaxed for drone imagery
+track_low_thresh:  0.05     # second-stage "byte" detections
+new_track_thresh:  0.35     # min score to start a brand-new track
+
+# --- Track lifecycle ---
+# Drone sequences: objects disappear behind occluders and re-emerge quickly
+track_buffer: 50            # frames a lost track is kept alive (25fps × 2s)
+match_thresh:  0.85         # IoU threshold for first-stage matching
+
+# --- Kalman motion model ---
+# fuse_score=True: incorporate detection confidence into Kalman update weight
+# This makes the filter less rigid when detections are noisy (ego-motion)
+fuse_score: True

@@ -1,0 +1,23 @@
+
+tracker_type: botsort
+
+# --- Association thresholds ---
+track_high_thresh: 0.30     
+track_low_thresh:  0.05     
+new_track_thresh:  0.35     
+track_buffer: 50            
+match_thresh:  0.85         
+
+# --- Global Motion Compensation (GMC) ---
+# This explicitly tells the tracker to use sparse optical flow 
+# to align frame t with frame t-1 before Kalman association
+gmc_method: sparseOptFlow 
+
+# BoT-SORT specific Re-ID and Proximity parameters
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+with_reid: False # Disabled to save compute, relying purely on GMC + Motion
+
+# --- Motion Model Tuning ---
+# Incorporate detection confidence into the update weight
+fuse_score: True
