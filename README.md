@@ -320,9 +320,11 @@ These optimizations can significantly improve FPS while reducing power consumpti
 │   ├── bytetrack_drone.yaml
 │   ├── botsort_drone.yaml
 │
-├── outputs
-│   ├── tracked_botsort_YOLO.mp4
-|   ├── 
+├── Outputs
+│   ├── tracked_bytetrack_YOLO.mp4
+|   ├── tracked_bytetrack_sahi.mp4
+|   ├── tracked_botsort_YOLO.mp4
+|   ├── tracked_botsort_sahi.mp4
 │
 └── results
     
