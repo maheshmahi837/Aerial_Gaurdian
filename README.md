@@ -321,7 +321,8 @@ These optimizations can significantly improve FPS while reducing power consumpti
 │   ├── botsort_drone.yaml
 │
 ├── outputs
-│   ├── tracked_video.mp4
+│   ├── tracked_botsort_YOLO.mp4
+|   ├── 
 │
 └── results
     
